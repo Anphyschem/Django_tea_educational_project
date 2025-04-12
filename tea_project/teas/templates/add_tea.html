@@ -1,0 +1,34 @@
+﻿{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить чай | Чайный ресурс</title>
+</head>
+
+<body>
+    <div class="tea-form-container">
+        <h1>Добавить новый чай</h1>
+
+        <form method="post" class="tea-form">
+            {% csrf_token %}
+            <!-- Ручной рендеринг полей вместо form.as_p -->
+            {% for field in form %}
+            <div class="form-group">
+                {{ field.label_tag }}
+                {{ field }}
+                {% if field.errors %}
+                {{ field.errors }}
+                {% endif %}
+                {% if field.help_text %}
+                <small style="color: #7a6a5a; font-size: 0.9em;">{{ field.help_text }}</small>
+                {% endif %}
+            </div>
+
+            {% endfor %}
+            <button class="submit-btn" type="submit">Добавить чай </button>
+        </form>
+    </div>
+</body>
+</html>

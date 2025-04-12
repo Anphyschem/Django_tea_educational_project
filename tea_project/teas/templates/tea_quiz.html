@@ -1,0 +1,36 @@
+﻿{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Чайная практика|Чайный ресурс</title>
+</head>
+
+<div class="container">
+
+    <header>
+        <h2> Проверь свои знания </h2>
+    </header>
+
+    <h2>Чайный тест ({{ question_num }}/{{ total_questions }})</h2>
+
+    <div class="tea-card">
+        <h2>{{ tea.title }}</h2>
+        <p>Тип: {{ tea.get_type_of_tea_display}}</p>
+
+        <form method="post">
+            {% csrf_token %}
+
+            <div>
+                <label>Температура воды (°C):</label>
+                <input type="number" name="temperature" min="20" max="100" required>
+            </div>
+
+            <div>
+                <label>Количество проливов:</label>
+                <input type="number" name="spills" min="1" max="25" required>
+            </div>
+            <button type="submit" , class="btn">Проверить</button>
+        </form>
+    </div>
+</div>

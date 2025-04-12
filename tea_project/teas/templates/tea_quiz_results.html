@@ -1,0 +1,19 @@
+﻿{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+
+<title> Результат практики|Чайный ресурс</title>
+<div class="results">
+    <header>
+        <h1>Результаты теста</h1>
+    </header>
+    <h3>Правильных ответов: {{ score }} из {{ total }}</h3>
+    {% if is_low_score %}
+    <p class="subtitle"> Путь длиною в тысячу лье начинается с одного шага: в практике открывается сила </p>
+    {% else %}
+    <p class="subtitle"> Бойся, что мастерство не совершенно, продолжай практику  </p>
+    {% endif %}
+    <a href="{% url 'tea_quiz' %}" , class="btn">Пройти тест снова</a>
+    <a href="{% url 'tea_table' %}" , class="btn">Практика в библиотеке</a>
+    <a href="{% url 'home_page' %}" , class="btn">Вернуться на главную</a>
+</div>

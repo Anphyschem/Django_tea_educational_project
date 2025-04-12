@@ -1,0 +1,146 @@
+﻿
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чайный образовательный ресурс</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Чайная мудрость</h1>
+            <p class="subtitle">Образовательный ресурс для ценителей чайной культуры</p>
+        </header>
+
+        <div class="main-content">
+            <img src="https://img.freepik.com/free-vector/green-tea-party-elements_1284-40914.jpg?t=st=1744320592~exp=1744324192~hmac=6687ac6b5ea56d1769d297109f2b0793804c3e96ea38506da7e0a7a1fe6a3359&w=740" alt="Чашка чая" class="tea-image">
+            <p class="subtitle"> Добро пожаловать на наш образовательный ресурс, посвященный удивительному миру чая. Здесь вы найдете полезную информацию о различных сортах чая, их свойствах и способах заваривания, а также сможете проверить свои знания.</p>
+
+            <p class="subtitle"> Начните свое путешествие в мир чая прямо сейчас:</p>
+
+            <div class="buttons">
+                <a href="/table" class="btn btn-table">Чайная библиотека</a>
+                <a href="/add-tea" class="btn">Добавить свой чай</a>
+                <a href="/practice" class="btn btn-practice">Проверить знания</a>
+            </div>
+        </div>
+        <footer>
+            <p class="subtitle">Чайная мудрость: образовательный ресурс для ценителей чайной культуры</p>
+        </footer>
+    </div>
+</body>
+
+
+
+
+
+<style>
+    body {
+        font-family: 'Georgia', serif;
+        background-color: #f5f5f0;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        background-image: url('https://img.freepik.com/free-vector/hand-drawn-sake-illustration_23-2149644776.jpg?t=st=1744320347~exp=1744323947~hmac=3da09f19ab8a29f5447fd809f37eba7144f56bddaf5638f461a4b2d7e316b16f&w=900');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        min-height: 100vh;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+        text-align: center;
+        padding: 40px 0;
+        border-bottom: 1px solid #d1c7b7;
+    }
+
+    h1 {
+        color: #5a3921;
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        font-style: italic;
+        color: #7a6a5a;
+        font-size: 1.2em;
+    }
+
+    .main-content {
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 20px 40px;
+        background-color: #8ba888;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.1em;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+        min-width: 200px;
+        text-align: center;
+    }
+
+        .btn:hover {
+            background-color: #6d8b6d;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+    .btn-practice {
+        background-color: #a88b8a;
+    }
+
+        .btn-practice:hover {
+            background-color: #8b6d6d;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+    .btn-table {
+        background-color: #a86a5e;
+    }
+
+        .btn-table:hover {
+            background-color: #8c564a;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+    .tea-image {
+        max-width: 300px;
+        margin: 30px auto;
+        display: block;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        color: #7a6a5a;
+        font-size: 0.9em;
+        border-top: 1px solid #d1c7b7;
+        margin-top: 40px;
+    }
+</style>
+</html>

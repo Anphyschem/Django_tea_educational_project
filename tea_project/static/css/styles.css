@@ -1,0 +1,278 @@
+/* style.css */
+/* Основные стили страницы */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f5f5f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://img.freepik.com/free-vector/hand-drawn-sake-illustration_23-2149644776.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Контейнер содержимого */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    min-height: 100vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Шапка */
+header {
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 1px solid #d1c7b7;
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #5a3921;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px 0;
+    color: #5a3921;
+    font-size: 1.8rem;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #7a6a5a;
+    font-size: 1.2rem;
+}
+
+/* Таблица с чаями */
+.tea-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 20px 10px;
+    margin: 2rem 0;
+}
+
+    .tea-table td {
+        padding: 12px;
+        background-color: #f9f9f7;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .tea-table th {
+        padding: 15px;
+        background-color: #8ba888;
+        color: white;
+        text-align: left;
+        border-radius: 8px;
+    }
+
+/* Карточка чая */
+.tea-card {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Формы */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #5a3921;
+    font-weight: 500;
+}
+
+input {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #d1c7b7;
+    border-radius: 4px;
+    font-family: 'Georgia', serif;
+}
+
+/* Кнопки */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding: 10px 100px;
+    background-color: #8ba888;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    min-width: 200px;
+    text-align: center;
+    margin: 15px auto;
+}
+
+    .btn:hover {
+        background-color: #6d8b6d;
+        transform: translateX(-50%) translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+.btn-practice {
+    background-color: #a88b8a;
+}
+
+    .btn-practice:hover {
+        background-color: #8b6d6d;
+    }
+
+.btn-table {
+    background-color: #a86a5e;
+}
+
+    .btn-table:hover {
+        background-color: #8c564a;
+    }
+
+/* Изображения */
+.tea-image {
+    max-width: 300px;
+    margin: 30px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Результаты */
+.results {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ссылки */
+a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #2196F3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+    a:hover {
+        background: #1976D2;
+        transform: translateY(-2px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+/* Подвал */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #7a6a5a;
+    font-size: 0.9rem;
+    border-top: 1px solid #d1c7b7;
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.9);
+}
+.tea-form-container {
+    max-width: 600px;
+    margin: 2.5rem auto;
+    padding: 1.875rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 0.625rem;
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.1);
+    border: 1px solid #d4c9b8;
+}
+
+/* Сама форма */
+.tea-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+    /* Группа полей */
+    .tea-form .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    /* Лейблы */
+    .tea-form label {
+        font-weight: 700;
+        color: #5a3921;
+        font-size: 1.1rem;
+    }
+
+    /* Поля ввода */
+    .tea-form input,
+    .tea-form textarea,
+    .tea-form select {
+        padding: 0.75rem 0.9375rem;
+        border: 1px solid #d4c9b8;
+        border-radius: 0.3125rem;
+        font-family: 'Georgia', serif;
+        font-size: 1rem;
+        background-color: #fffdf9;
+        transition: border-color 0.3s ease;
+    }
+
+    .tea-form textarea {
+        min-height: 6.25rem;
+        resize: vertical;
+    }
+
+    /* Кнопка отправки */
+    .tea-form .submit-btn {
+        background-color: #8ba888;
+        color: white;
+        border: none;
+        padding: 0.875rem 1.25rem;
+        font-size: 1.1rem;
+        border-radius: 0.3125rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 0.625rem;
+        font-family: 'Georgia', serif;
+    }
+
+        .tea-form .submit-btn:hover {
+            background-color: #6d8b6d;
+            transform: translateY(-2px);
+        }
+
+    /* Ошибки валидации */
+    .tea-form .errorlist {
+        color: #a88b8a;
+        margin: 0.3125rem 0 0;
+        padding-left: 1.25rem;
+        list-style: none;
+    }
+
+        .tea-form .errorlist li::before {
+            content: "⚠ ";
+            margin-right: 0.5rem;
+        }

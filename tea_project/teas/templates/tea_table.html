@@ -1,0 +1,44 @@
+﻿{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чайная библиотека | Чайный ресурс</title>
+</head>
+<style>
+    .tea-item {
+        cursor: pointer;
+    }
+</style>
+<div class="container">
+    <header>
+        <h1>Чайная библиотека</h1>
+    </header>
+    <table class="tea-table">
+        <tr>
+            <th>Чай</th>
+            <th>Параметры заваривания</th>
+        </tr>
+        {% for tea in teas %}
+        <tr>
+            <td class="tea-item" title="{{ tea.description }}">
+                <strong>{{tea.title}}</strong><br>
+                <em>{{tea.get_type_of_tea_display}}</em>
+            </td>
+
+            <td>
+                <strong>Температура:</strong> {{ tea.water_temperature }}°C<br>
+                <strong>Проливы:</strong> {{ tea.spillage_number }}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <footer>
+        <p class="subtitle"> Чайная мудрость: образовательный ресурс для ценителей вкусного чая </p>
+    </footer>
+</div>
+
+
+
+
+
